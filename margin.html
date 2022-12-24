@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Margin</title>
+    <style>
+      .div1 {
+        border: 2px solid black;
+        /* to center div */
+        margin: auto;
+        width: 500px;
+      }
+      .p1 {
+        border: 2px solid red;
+        margin: 50px 100px; /* top-bottom = 50px; left-right = 100px*/
+      }
+      .div2{
+        border: 2px solid black;
+        margin-left: 50px;
+      }
+      .p2{
+        margin: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- center using margin -->
+    <h1>margin:auto ; width:500px => center</h1>
+    <div class="div1">
+      <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ad, quos
+        labore accusantium aliquid ex iusto consequuntur dolor molestias at
+        minus adipisci recusandae assumenda est nemo repudiandae enim eaque id.
+      </p>
+    </div>
+    <br />
+    <!-- margin:inherit -->
+    <h1>margin:inherit</h1>
+    <div class="div2">
+      <p class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ad, quos
+        minus adipisci recusandae assumenda est nemo repudiandae enim eaque id.
+      </p>
+    </div>
+  </body>
+</html>

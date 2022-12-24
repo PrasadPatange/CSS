@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive TopNav</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        ul.topNav{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background: grey;
+        }
+        ul.topNav li{
+            float: left;
+        }
+        ul.topNav li a{
+            display: block;
+            color: aqua;
+            text-align: center;
+            padding: 15px 17px;
+            text-decoration: none;
+        }
+        ul.topNav li a.active{
+            background: darkgray;
+        }
+        ul.topNav li a:hover:not(.active,.login){
+            background: black;
+            color: white;
+        }
+        ul.topNav li.right{
+            background: darkred;
+            color: white;
+            float: right;
+        }
+        /* Responsive */
+        @media screen and (max-width:600px){
+            ul.topNav li.right,ul.topNav li{
+                float:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="topNav">
+        <li><a class="active" href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Contact</a></li>
+        <li class="right"><a class="login" href="">Login</a></li>
+    </ul>
+</body>
+</html>

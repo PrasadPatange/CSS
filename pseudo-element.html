@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element</title>
+    <style>
+      .intro::first-letter {
+        color: navy;
+        font-size: xx-large;
+        font-weight: bold;
+      }
+      .line::first-line {
+        color: red;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .multi::first-letter {
+        color: red;
+        font-size: x-large;
+      }
+      .multi::first-line {
+        color: navy;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+
+      .beforecon::before {
+        /* content:url(./assets/favicon1.jpg) */
+        content: " (smile) ";
+      }
+      .aftercon::after {
+        /* content:url(./assets/favicon1.jpg) */
+        content: " (smile) ";
+      }
+      ::marker {
+        color: red;
+        font-size: 23px;
+      }
+      .select::selection {
+        color: red;
+        background: yellow;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Element</h1>
+    <h1>::first-letter</h1>
+    <p class="intro">This is an introduction.</p>
+    <h1>::first-line</h1>
+    <p class="line">
+      This is a paragraph with some text. A bit more text even.
+    </p>
+    <p class="multi">
+      You can combine the ::first-letter and ::first-line pseudo-elements to add
+      a special effect to the first letter and the first line of a text!
+    </p>
+
+    <h1>::before</h1>
+    <p>
+      The ::before pseudo-element inserts content before the content of an
+      element.
+    </p>
+
+    <h2 class="beforecon">This is a heading</h2>
+
+    <h1>::after</h1>
+    <p>
+      The ::after pseudo-element inserts content after the content of an
+      element.
+    </p>
+
+    <h2 class="aftercon">This is a heading</h2>
+
+    <h1>::marker</h1>
+    <p>The ::marker pseudo-element selects the markers of list items.</p>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ol>
+
+    <h1>::selection</h1>
+    <p>
+      The ::selection pseudo-element matches the portion of an element that is
+      selected by a user.
+    </p>
+    <p>
+      The following CSS properties can be applied to ::selection: color,
+      background, cursor, and outline.
+    </p>
+
+    <h1>Select some text on this page:</h1>
+
+    <p class="select">This is a paragraph.</p>
+    <div class="select">This is some text in a div element.</div>
+  </body>
+</html>

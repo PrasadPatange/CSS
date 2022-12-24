@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width And Height</title>
+    <style>
+       .div1{
+        background-color: aqua;
+        width: 500px;
+        height: 100px;
+       }
+       .div2{
+        background-color: aqua;
+        max-width: 500px;
+        height: 100px;
+       }
+       .div3{
+        background-color: aqua;
+        max-width: 500px;
+        min-width: 100px;
+        height: 100px;
+       }
+    </style>
+</head>
+<body>
+    <h4>The problem with the <div> above occurs when the browser window is smaller than the width of the element (500px). The browser then adds a horizontal scrollbar to the page.
+    Using max-width instead, in this situation, will improve the browser's handling of small windows.</h4>
+    <h4>Width and Height</h4>
+    <div class="div1">
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, nemo.
+    </div>
+    <br>
+    <h4>max-width = to make div responsive and Height</h4>
+    <div class="div2">
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, nemo.
+    </div>
+    <br>
+    <h4>max-width min-width and Height</h4>
+    <div class="div3">
+       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, nemo.
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Navbar</title>
+    <style>
+        ul{
+          list-style: none;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+          background-color: #333;
+        }
+        li{
+           float: left;
+        }
+        li a{
+            display: inline-block;
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+        li a:hover{
+            background-color: yellow;
+            color: navy;
+        }
+        .active{
+           background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="" class="active">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</body>
+</html>

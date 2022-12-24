@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Resonsive Image</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .hero-image {
+        background: url('https://images.pexels.com/photos/2583496/pexels-photo-2583496.jpeg?cs=srgb&dl=pexels-bongvideos-production-2583496.jpg&fm=jpg') no-repeat center;
+        background-size: cover;
+        height: 500px;
+        position: relative;
+      }
+
+      .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+      }
+      .button{
+        background-color: transparent;
+       padding: 10px;
+        border: 2px solid grey;
+        border-radius: 5px;
+      }
+      .button:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size: 50px">I am Prasad Patange</h1>
+        <h3>And I'm a Software Engineer</h3>
+        <button class="button">Resume</button>
+      </div>
+    </div>
+
+    <p>Page content..</p>
+    <p>
+      Note that this technique will also make the image responsive: Resize the
+      browser window to see the effect.
+    </p>
+  </body>
+</html>

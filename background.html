@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background</title>
+    <style>
+      div {
+        padding: 2px;
+        background-color: aqua;
+      }
+      .container {
+        /* Shorthand */
+        background: navy;
+        color: aqua;
+        opacity: 0.3;
+      }
+      h1 {
+        background-color: yellow;
+        margin: 10px;
+        box-sizing: border-box;
+        padding: 10px;
+      }
+      div > h1 {
+        background-color: red;
+      }
+
+      .backImg {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        border: 2px solid black;
+        width: 595px;
+        height: 350px;
+        background-image: url("assets/favicon1.jpg");
+        background-repeat: no-repeat;
+      }
+      .backImg-repeat {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        border: 2px solid black;
+        width: 1210px;
+        height: 700px;
+        background-image: url("assets/favicon1.jpg");
+        background-repeat: repeat;
+      }
+      .backImgreat-X {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        border: 2px solid black;
+        width: 1210px;
+        height: 350px;
+        background-image: url("assets/favicon1.jpg");
+        background-repeat: repeat-x;
+      }
+      .backImgreat-Y {
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        border: 2px solid black;
+        width: 595px;
+        height: 695px;
+        background-image: url("assets/favicon1.jpg");
+        background-repeat: repeat-y;
+      }
+      .backImg-Position {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        text-align: center;
+        height: 350px;
+        margin: right 200px;
+        background-image: url("assets/favicon1.jpg");
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+    .backImg-att-fix {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        background-image: url("assets/favicon1.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding: 20px;
+        margin-right: 100px;
+        height: 1383px;
+        width: 1500px;
+        background-attachment: fixed;
+      }
+    .backImg-att-scroll {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        background-image: url("assets/favicon1.jpg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        margin-right: 200px;
+        height: 900px;
+        width: 1210px;
+        background-attachment: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Background-Color</h1>
+    </div>
+    <h1>Outside div</h1>
+    <div class="container">
+      <h2>Background-color = navy with Opacity = 0.3</h2>
+    </div>
+
+    <div class="backImg">
+      <h2>Background Image</h2>
+      <p>background-image: url("image.jpg")</p>
+    </div>
+    <div class="backImg-repeat">
+      <h2>Background Image Repeat</h2>
+      <p>background-image: url("image.jpg")</p>
+    </div>
+
+    <div class="backImgreat-X">
+      <h2>Background Image Repeat-X</h2>
+      <p>background-image: url("image.jpg")</p>
+    </div>
+
+    <div class="backImgreat-Y">
+      <h2>Background Image Repeat-Y</h2>
+      <p>background-image: url("image.jpg")</p>
+    </div>
+    <div class="backImg-Position">
+      <h2>Background Image Position</h2>
+      <p>background-image: url("image.jpg")</p>
+    </div>
+
+    <div class="backImg-att-fix">
+      <h2>Background Image Attachment Fixed</h2>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+    </div>
+    <div class="backImg-att-scroll">
+      <h2>Background Image Attachment Scroll</h2>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+      <p>background-image: url("image.jpg")</p>
+    </div>
+  </body>
+</html>
